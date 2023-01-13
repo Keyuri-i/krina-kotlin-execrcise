@@ -11,20 +11,20 @@ fun main(){
 }
 
 //base class
-open class Employee(age:Int ,name:String,salary:Int){
+open class Employee1(age:Int ,name:String,salary:Int){
     init {
         println("My name is $name ,$age year old and my salary is $salary")
     }
 }
 
 //derived class
-class AndroidDeveloper(age: Int,name: String,salary: Int):Employee(age, name, salary) {
+class AndroidDeveloper(age: Int,name: String,salary: Int):Employee1(age, name, salary) {
     fun android(){
         println("I am Android Developer")
         println()
     }
 }
-class IosDeveloper(age: Int,name: String,salary: Int):Employee(age, name, salary) {
+class IosDeveloper(age: Int,name: String,salary: Int):Employee1(age, name, salary) {
     fun developer(){
         println("I am Ios app Developer")
         println()
