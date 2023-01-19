@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">BasicProgram</string>
+    <string name="subscription">Subscription</string>
+    <string name="get_unlimited_access">Get unlimited \naccess!</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="_10">  -10%  </string>
+    <string name="_3_99_per_month">$3,99 per month</string>
+    <string name="_3_99">$3,99</string>
+    <string name="_80_per_year">$80 per year</string>
+    <string name="_9_99_per_month">$9,99 per month</string>
+    <string name="_9_99">$9,99</string>
+    <string name="at_least_8_characters">at least 8 characters</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="leslie_alexander">Leslie Alexander</string>
+    <string name="name">Name</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="_60_per_year">$60 per year</string>
 </resources>
