@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_left_2"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -29,8 +29,8 @@
         android:textColor="@color/dark_gray"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/imgLeftArrow"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgLeftArrow"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -39,8 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:src="@drawable/second_screen"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtSubscription" />
 
     <TextView
@@ -48,8 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/BoldText"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgDiamond" />
 
     <TextView
@@ -57,8 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/Border"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/txtBackground2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtBackground2"
         app:layout_constraintTop_toBottomOf="@id/txtUnlimited" />
 
     <TextView
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_9_99"
         style="@style/BigText"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground"
+        app:layout_constraintStart_toStartOf="@id/txtBackground"
         app:layout_constraintTop_toTopOf="@id/txtBackground" />
 
     <TextView
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_9_99_per_month"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground"
+        app:layout_constraintStart_toStartOf="@id/txtBackground"
         app:layout_constraintTop_toBottomOf="@id/txt_9.99"
         style="@style/TextViewStyle"/>
 
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_80_per_year"
         style="@style/SmallText"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground"
+        app:layout_constraintStart_toStartOf="@id/txtBackground"
         app:layout_constraintTop_toBottomOf="@id/txt_9.99_pm" />
 
     <TextView
@@ -93,8 +93,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/Border"
-        app:layout_constraintLeft_toRightOf="@id/txtBackground"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtBackground"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtUnlimited" />
 
     <TextView
@@ -104,7 +104,7 @@
         style="@style/BigText"
         android:text="@string/_3_99"
         android:textColor="@color/blue"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground2"
+        app:layout_constraintStart_toStartOf="@id/txtBackground2"
         app:layout_constraintTop_toTopOf="@id/txtBackground2" />
 
     <TextView
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_3_99_per_month"
         style="@style/SmallText"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground2"
+        app:layout_constraintStart_toStartOf="@id/txtBackground2"
         app:layout_constraintTop_toBottomOf="@id/txt_3.99" />
 
     <TextView
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         style="@style/SmallText"
         android:text="@string/_60_per_year"
-        app:layout_constraintLeft_toLeftOf="@id/txtBackground2"
+        app:layout_constraintStart_toStartOf="@id/txtBackground2"
         app:layout_constraintTop_toBottomOf="@id/txt_3.99_pm" />
 
 
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_10"
         style="@style/Tag"
-        app:layout_constraintRight_toRightOf="@id/txtBackground2"
+        app:layout_constraintEnd_toEndOf="@id/txtBackground2"
         app:layout_constraintTop_toTopOf="@id/txtBackground2" />
 
     <TextView
@@ -139,8 +139,8 @@
         android:layout_height="wrap_content"
         style="@style/GoPremium"
         app:layout_constraintBottom_toTopOf="@id/imgStar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <ImageView
@@ -151,7 +151,7 @@
         android:layout_marginBottom="50dp"
         android:src="@drawable/ic_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgStar"
@@ -160,8 +160,8 @@
         android:layout_marginBottom="50dp"
         android:src="@drawable/ic_star"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/imgHome"
-        app:layout_constraintRight_toLeftOf="@id/imgSetting" />
+        app:layout_constraintStart_toEndOf="@id/imgHome"
+        app:layout_constraintEnd_toStartOf="@id/imgSetting" />
 
     <ImageView
         android:id="@+id/imgSetting"
@@ -171,8 +171,7 @@
         android:layout_marginBottom="50dp"
         android:src="@drawable/ic_settings"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/blue" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

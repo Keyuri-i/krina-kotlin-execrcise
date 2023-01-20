@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:text="@string/name"
         style="@style/TitleText"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view" />
 
     <EditText
@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         style="@style/TitleText"
         android:text="@string/email"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etName" />
 
     <EditText
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         style="@style/TitleText"
         android:text="@string/password"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etEmail" />
 
     <EditText
@@ -135,7 +135,7 @@
         android:layout_width="80dp"
         android:layout_height="3dp"
         style="@style/Multiline"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPass" />
 
     <View
@@ -143,7 +143,7 @@
         android:layout_width="80dp"
         android:layout_height="3dp"
         style="@style/Multiline"
-        app:layout_constraintLeft_toRightOf="@id/view1"
+        app:layout_constraintStart_toEndOf="@id/view1"
         app:layout_constraintTop_toBottomOf="@id/etPass" />
 
     <View
@@ -151,7 +151,7 @@
         android:layout_width="80dp"
         android:layout_height="3dp"
         style="@style/Multiline"
-        app:layout_constraintLeft_toRightOf="@id/view2"
+        app:layout_constraintStart_toEndOf="@id/view2"
         app:layout_constraintTop_toBottomOf="@id/etPass" />
 
     <View
@@ -160,7 +160,7 @@
         android:layout_height="3dp"
         style="@style/Multiline"
         android:layout_marginEnd="15dp"
-        app:layout_constraintLeft_toRightOf="@id/view3"
+        app:layout_constraintStart_toEndOf="@id/view3"
         app:layout_constraintTop_toBottomOf="@id/etPass" />
 
 
@@ -168,7 +168,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view1" />
 
     <TextView
@@ -177,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-        app:layout_constraintLeft_toRightOf="@id/checkBox"
+        app:layout_constraintStart_toEndOf="@id/checkBox"
         app:layout_constraintTop_toBottomOf="@id/view1" />
 
     <Button
@@ -196,8 +196,8 @@
         android:layout_width="320dp"
         android:layout_height="1dp"
         style="@style/line"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSignUp" />
 
     <TextView
@@ -207,8 +207,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/already_have_an_account"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewLine" />
 
     <TextView
@@ -219,8 +219,8 @@
         android:text="@string/log_in"
         android:textColor="@color/blue"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtAccount" />
 
 
