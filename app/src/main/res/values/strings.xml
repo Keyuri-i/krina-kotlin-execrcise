@@ -20,4 +20,38 @@
     <string name="name">Name</string>
     <string name="sign_up_with_google">Sign up with Google</string>
     <string name="_60_per_year">$60 per year</string>
+
+    <string name="dot">.</string>
+    <string name="zero">0</string>
+    <string name="equal">=</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
+    <string name="percent">%</string>
+    <string name="bracket">(    )</string>
+    <string name="ac">AC</string>
+
+
+    <string name="search">Search</string>
+    <string name="gm">Good Morning Chirag</string>
+    <string name="exercises">Exercises</string>
+    <string name="setting">Setting</string>
+    <string name="today">Today</string>
+    <string name="upload">upload</string>
+    <string name="discard">Discard</string>
+    <string name="singapore">Singapore</string>
+    <string name="camera">Camera</string>
+    <string name="diet_chart">Diet Chart</string>
+    <string name="meditation">Meditation</string>
+    <string name="yoga">Yoga</string>
 </resources>

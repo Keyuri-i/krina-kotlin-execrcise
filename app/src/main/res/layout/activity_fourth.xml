@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/charcol"
+    tools:context=".FourthActivity">
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_menu"/>
+
+    <TextView
+        android:id="@+id/txt_gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gm"
+        android:textSize="22sp"
+        android:textColor="@color/white_1"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_gm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:searchIcon="@drawable/ic_search"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false"
+        style="@style/SearchBox"/>
+
+    <TextView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white_1"
+        android:layout_marginTop="170dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+    <TextView
+        android:id="@+id/txtDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Box"
+        android:layout_marginTop="120dp"
+        android:text="@string/diet_chart"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableTopCompat="@drawable/diet" />
+
+    <TextView
+        android:id="@+id/txtExer"
+        style="@style/Box1"
+        android:layout_width="168dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="@string/exercises"
+        app:drawableTopCompat="@drawable/exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+    <TextView
+        android:id="@+id/txtMed"
+        style="@style/Box"
+        android:layout_width="174dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/meditation"
+        app:drawableTopCompat="@drawable/meditation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDiet" />
+
+    <TextView
+        android:id="@+id/txtYoga"
+        style="@style/Box1"
+        android:layout_width="163dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/yoga"
+        app:drawableTopCompat="@drawable/yoga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtExer" />
+
+
+    <TextView
+        android:id="@+id/txtBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        android:paddingBottom="35dp"/>
+
+    <TextView
+        android:id="@+id/txtToday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="@string/today"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="@id/txtBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableTopCompat="@drawable/ic_event" />
+
+
+    <TextView
+        android:id="@+id/txtExercises"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/exercises"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/ic_fitness"
+        android:textColor="@color/gray_500"
+        app:layout_constraintBottom_toBottomOf="@id/txtBottom"
+        app:layout_constraintStart_toEndOf="@id/txtToday" />
+
+
+    <TextView
+        android:id="@+id/txt_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:text="@string/setting"
+        android:gravity="center"
+        android:textColor="@color/gray_500"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/txtBottom"
+        app:layout_constraintStart_toEndOf="@id/txtExercises"
+        app:drawableTopCompat="@drawable/ic_setting_white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

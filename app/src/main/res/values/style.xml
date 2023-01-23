@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<style name="TextViewStyle">
+
+<item name="android:layout_marginStart">10dp</item>
+    <item name="android:layout_marginTop">8dp</item>
+    <item name="android:fontFamily">@font/truenoexbd</item>
+    <item name="android:textColor">@color/gray1</item>
+    <item name="android:textSize">11sp</item>
+
+</style>
+
+    <style name="BigText">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:fontFamily">@font/truenoexbd</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">17sp</item>
+
+    </style>
+
+    <style name="SmallText">
+
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:fontFamily">@font/truenoexbd</item>
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+    <style name="Border">
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/value_border</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:paddingTop">45dp</item>
+        <item name="android:paddingRight">60dp</item>
+        <item name="android:paddingBottom">45dp</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">@color/medium_black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@color/light_gray1</item>
+
+    </style>
+
+    <style name="Multiline">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@color/light_gray1</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+
+    <style name="Tag">
+        <item name="android:background">@drawable/small_text_border</item>
+        <item name="android:text">@string/_10</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingStart">7dp</item>
+        <item name="android:paddingEnd">7dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GoPremium">
+        <item name="android:layout_marginBottom">70dp</item>
+        <item name="android:background">@drawable/text_border</item>
+        <item name="android:fontFamily">@font/truenoexbd</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:text">@string/go_premium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:background">@drawable/custom_edit_text</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BoldText">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:fontFamily">@font/truenoexbd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/get_unlimited_access</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NumberBox">
+        <item name="android:background">@drawable/box</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="EqualBox">
+        <item name="android:background">@drawable/orange_box</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OperatorBox">
+        <item name="android:background">@drawable/gray_box</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SearchBox">
+        <item name="android:background">@drawable/round_border</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="Box">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingTop">35dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingBottom">35dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="Box1">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:backgroundTint">@color/btn_clr</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Detail">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="EditText1">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

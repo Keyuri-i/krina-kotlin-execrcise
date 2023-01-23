@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/txt_dot"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_0"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_equal"
+        app:layout_constraintStart_toEndOf="@id/txt_dot" />
+
+    <TextView
+        android:id="@+id/txt_equal"
+        style="@style/EqualBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_plus"
+        app:layout_constraintStart_toEndOf="@id/txt_0" />
+
+    <TextView
+        android:id="@+id/txt_plus"
+        style="@style/OperatorBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_equal" />
+
+    <TextView
+        android:id="@+id/txt_one"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@id/txt_dot"
+        app:layout_constraintEnd_toStartOf="@id/txt_two"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_two"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/two"
+        app:layout_constraintBottom_toTopOf="@id/txt_0"
+        app:layout_constraintEnd_toStartOf="@id/txt_three"
+        app:layout_constraintStart_toEndOf="@id/txt_one" />
+
+    <TextView
+        android:id="@+id/txt_three"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@id/txt_equal"
+        app:layout_constraintEnd_toStartOf="@id/txt_minus"
+        app:layout_constraintStart_toEndOf="@id/txt_two" />
+
+    <TextView
+        android:id="@+id/txt_minus"
+        style="@style/OperatorBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toTopOf="@id/txt_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_equal" />
+
+    <TextView
+        android:id="@+id/txt_four"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/four"
+        app:layout_constraintBottom_toTopOf="@id/txt_one"
+        app:layout_constraintEnd_toStartOf="@id/txt_five"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_five"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/five"
+        app:layout_constraintBottom_toTopOf="@id/txt_two"
+        app:layout_constraintEnd_toStartOf="@id/txt_six"
+        app:layout_constraintStart_toEndOf="@id/txt_four" />
+
+    <TextView
+        android:id="@+id/txt_six"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/six"
+        app:layout_constraintBottom_toTopOf="@id/txt_three"
+        app:layout_constraintEnd_toStartOf="@id/txt_multi"
+        app:layout_constraintStart_toEndOf="@id/txt_five" />
+
+    <TextView
+        android:id="@+id/txt_multi"
+        style="@style/OperatorBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/multi"
+        app:layout_constraintBottom_toTopOf="@id/txt_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_six" />
+
+    <TextView
+        android:id="@+id/txt_seven"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toTopOf="@id/txt_four"
+        app:layout_constraintEnd_toStartOf="@id/txt_eight"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_eight"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toTopOf="@id/txt_five"
+        app:layout_constraintEnd_toStartOf="@id/txt_nine"
+        app:layout_constraintStart_toEndOf="@id/txt_seven" />
+
+    <TextView
+        android:id="@+id/txt_nine"
+        style="@style/NumberBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toTopOf="@id/txt_six"
+        app:layout_constraintEnd_toStartOf="@id/txt_div"
+        app:layout_constraintStart_toEndOf="@id/txt_eight" />
+
+    <TextView
+        android:id="@+id/txt_div"
+        style="@style/OperatorBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/div"
+        app:layout_constraintBottom_toTopOf="@id/txt_multi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_nine" />
+
+    <TextView
+        android:id="@+id/txt_ac"
+        style="@style/OperatorBox"
+        android:layout_width="206dp"
+        android:layout_height="80dp"
+        android:text="@string/ac"
+        app:layout_constraintBottom_toTopOf="@+id/txt_seven"
+        app:layout_constraintEnd_toStartOf="@id/txt_bracket"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_bracket"
+        style="@style/OperatorBox"
+        android:layout_width="101dp"
+        android:layout_height="80dp"
+        android:text="@string/bracket"
+        app:layout_constraintBottom_toTopOf="@id/txt_nine"
+        app:layout_constraintEnd_toStartOf="@id/txt_percent" />
+
+    <TextView
+        android:id="@+id/txt_percent"
+        style="@style/OperatorBox"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/percent"
+        app:layout_constraintBottom_toTopOf="@id/txt_div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@id/txt_nine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
