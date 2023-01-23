@@ -8,8 +8,8 @@ fun main(){
 
     //remove duplicate element
     val uniqueData = data.distinct()
-    print("Remove Duplicate Data :")
-    println(uniqueData)
+    print("Remove Duplicate Data : $uniqueData")
+
 
 }
 
