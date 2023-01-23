@@ -54,4 +54,11 @@
     <string name="diet_chart">Diet Chart</string>
     <string name="meditation">Meditation</string>
     <string name="yoga">Yoga</string>
+    <string name="_12k">12k</string>
+    <string name="_542">542</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="john_fred">John Fred</string>
+    <string name="_3_posts">3 POSTS</string>
+    <string name="_8_photos">8 photos</string>
 </resources>
