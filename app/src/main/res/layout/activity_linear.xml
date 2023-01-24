@@ -76,6 +76,8 @@
         android:id="@+id/btn_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/sign_up"
         style="@style/ButtonLinear"/>
 
 
@@ -89,5 +91,6 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ButtonLinear1"/>
+        android:text="@string/log_in"
+        style="@style/ButtonLinear"/>
 </LinearLayout>

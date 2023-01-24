@@ -260,9 +260,8 @@
         <item name="android:layout_marginStart">55dp</item>
         <item name="android:layout_marginEnd">55dp</item>
         <item name="android:backgroundTint">@color/sign_up_blue</item>
-        <item name="android:text">@string/sign_up</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:layout_marginTop">15dp</item>
+
     </style>
 
     <style name="TextViewLinear">
@@ -274,12 +273,14 @@
 
     </style>
 
-    <style name="ButtonLinear1">
+    <style name="ButtonConstraint">
     <item name="android:layout_marginStart">55dp</item>
     <item name="android:layout_marginEnd">55dp</item>
     <item name="android:backgroundTint">@color/sign_up_blue</item>
-    <item name="android:text">@string/log_in</item>
     <item name="android:textAllCaps">false</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
     </style>
+
 
 </resources>
