@@ -14,7 +14,9 @@
         android:minHeight="?attr/actionBarSize"
         android:background="@color/sign_up_blue">
 
-            <ImageView
+
+
+        <ImageView
                 android:id="@+id/img_navigation_drawer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,8 +29,8 @@
             android:layout_height="wrap_content"
             android:text="@string/underline_sign_up"
             android:textColor="@color/white"
-            android:gravity="bottom"
-            android:layout_gravity="center"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="22dp"
             android:textSize="15sp"/>
 
     </androidx.appcompat.widget.Toolbar>
