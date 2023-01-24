@@ -245,4 +245,41 @@
         <item name="layout_constraintTop_toTopOf">@id/txtBack</item>
     </style>
 
+<style name="EditTextStyle">
+    <item name="android:textSize">11sp</item>
+    <item name="drawableTint">@color/edit_text_color</item>
+    <item name="android:backgroundTint">@color/edit_text_color</item>
+    <item name="android:layout_marginStart">55dp</item>
+    <item name="android:layout_marginEnd">55dp</item>
+    <item name="android:textColorHint">@color/edit_text_color</item>
+    <item name="android:drawablePadding">2dp</item>
+    <item name="android:textColor">@color/dark_gray</item>
+</style>
+
+    <style name="ButtonLinear">
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginEnd">55dp</item>
+        <item name="android:backgroundTint">@color/sign_up_blue</item>
+        <item name="android:text">@string/sign_up</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="TextViewLinear">
+        <item name="android:text">@string/already_account</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginTop">35dp</item>
+
+    </style>
+
+    <style name="ButtonLinear1">
+    <item name="android:layout_marginStart">55dp</item>
+    <item name="android:layout_marginEnd">55dp</item>
+    <item name="android:backgroundTint">@color/sign_up_blue</item>
+    <item name="android:text">@string/log_in</item>
+    <item name="android:textAllCaps">false</item>
+    </style>
+
 </resources>

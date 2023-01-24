@@ -33,4 +33,8 @@
     <color name="btn_clr">#d6d7d7</color>
     <color name="green">#419488</color>
 
+
+    <color name="sign_up_blue">#489bff</color>
+    <color name="edit_text_color">#adadad</color>
+
 </resources>

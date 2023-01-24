@@ -61,4 +61,8 @@
     <string name="john_fred">John Fred</string>
     <string name="_3_posts">3 POSTS</string>
     <string name="_8_photos">8 photos</string>
+
+
+    <string name="underline_sign_up"><u> Sign up</u></string>
+    <string name="already_account">Already have an account?</string>
 </resources>
