@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/InstaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_left_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            style="@style/InstaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_edit" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:shapeAppearanceOverlay="@style/Circular"
+            tools:layout_editor_absoluteY="52dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/InstaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maria_jorden"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/shapeableImageView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/InstaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/maria"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/InstaBackgroundImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:background="@drawable/circle_image"
+            android:src="@drawable/ic_share"
+            app:layout_constraintBottom_toBottomOf="@id/button"
+            app:layout_constraintEnd_toStartOf="@id/button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toTopOf="@id/button" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/InstaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_border"
+            android:text="@string/follow"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/InstaBackgroundImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/circle_image"
+            android:src="@drawable/ic_share"
+            app:layout_constraintBottom_toBottomOf="@id/button"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/button"
+            app:layout_constraintTop_toTopOf="@id/button"
+            app:layout_editor_absoluteY="157dp" />
+
+        <TextView
+            android:id="@+id/txtStart"
+            style="@style/InstaBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/_99"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddle"
+            app:layout_constraintEnd_toStartOf="@id/txtMiddle"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toTopOf="@id/txtMiddle" />
+
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/purple"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddleBottom"
+            app:layout_constraintEnd_toStartOf="@id/txtMiddle"
+            app:layout_constraintStart_toEndOf="@id/txtStart"
+            app:layout_constraintTop_toTopOf="@id/txtMiddle" />
+
+        <TextView
+            android:id="@+id/txtMiddle"
+            style="@style/InstaBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/_50_5k"
+            app:layout_constraintEnd_toStartOf="@id/txtEnd"
+            app:layout_constraintStart_toEndOf="@id/txtStart"
+            app:layout_constraintTop_toBottomOf="@id/button" />
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/purple"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddleBottom"
+            app:layout_constraintEnd_toStartOf="@id/txtEnd"
+            app:layout_constraintStart_toEndOf="@id/txtMiddle"
+            app:layout_constraintTop_toTopOf="@id/txtMiddle" />
+
+        <TextView
+            android:id="@+id/txtEnd"
+            style="@style/InstaBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="@string/_2_3_m"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddle"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toEndOf="@id/txtMiddle"
+            app:layout_constraintTop_toTopOf="@id/txtMiddle" />
+
+
+        <TextView
+            android:id="@+id/txtStartBottom"
+            style="@style/InstaNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/following"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddleBottom"
+            app:layout_constraintEnd_toStartOf="@id/txtMiddleBottom"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/txtStart"
+            app:layout_constraintTop_toTopOf="@id/txtMiddleBottom" />
+
+
+        <TextView
+            android:id="@+id/txtMiddleBottom"
+            style="@style/InstaNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/followers"
+            app:layout_constraintEnd_toStartOf="@id/txtEnd"
+            app:layout_constraintStart_toEndOf="@id/txtStart"
+            app:layout_constraintTop_toBottomOf="@id/txtMiddle" />
+
+        <TextView
+            android:id="@+id/txtEndBottom"
+            style="@style/InstaNormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="@string/like"
+            app:layout_constraintBottom_toBottomOf="@id/txtMiddleBottom"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toEndOf="@id/txtMiddleBottom"
+            app:layout_constraintTop_toTopOf="@id/txtMiddleBottom" />
+
+        <View
+            android:id="@+id/viewLineHorizontal1"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/view_line"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/txtMiddleBottom" />
+
+        <TextView
+            android:id="@+id/txtFollower"
+            style="@style/InstaTextFollower"
+            android:text="@string/follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtSee"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/viewLineHorizontal1" />
+
+        <TextView
+            android:id="@+id/txtSee"
+            style="@style/InstaTextSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/txtFollower"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/viewLineHorizontal1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/txtFollower" />
+
+        <View
+            android:id="@+id/viewLineHorizontal2"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="@color/view_line"
+            app:layout_constraintEnd_toEndOf="@id/textView4"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+
+
+        <TextView
+            android:id="@+id/txtPhotos"
+            style="@style/InstaTextFollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photos"
+            app:layout_constraintStart_toStartOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/viewLineHorizontal2" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fantasy"
+            android:layout_marginStart="10dp"
+            style="@style/shapableImage"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/textView4"
+            app:layout_constraintEnd_toStartOf="@id/imgEnd"
+            app:layout_constraintTop_toBottomOf="@id/txtPhotos"
+            app:layout_constraintStart_toStartOf="@id/textView4"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fantasy"
+            style="@style/shapableImage"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/textView4"
+            app:layout_constraintStart_toEndOf="@id/imgStart"
+            app:layout_constraintTop_toBottomOf="@id/txtPhotos"
+            app:layout_constraintEnd_toEndOf="@id/textView4"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

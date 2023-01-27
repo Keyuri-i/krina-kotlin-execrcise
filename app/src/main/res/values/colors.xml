@@ -37,4 +37,8 @@
     <color name="sign_up_blue">#489bff</color>
     <color name="edit_text_color">#adadad</color>
 
+    <color name="purple">#8d00fd</color>
+    <color name="light_purple">#EFECF1</color>
+    <color name="view_line">#f3f3f3</color>
+    <color name="vertical_view_line">#E0D0F2</color>
 </resources>

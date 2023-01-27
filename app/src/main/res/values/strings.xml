@@ -65,4 +65,13 @@
 
     <string name="underline_sign_up"><u> Sign up</u></string>
     <string name="already_account">Already have an account?</string>
+    <string name="maria">\@mariajordan01</string>
+    <string name="follow">Follow</string>
+    <string name="like">Like</string>
+    <string name="_2_3_m">2.3 M</string>
+    <string name="_50_5k">50.5k</string>
+    <string name="_99">99</string>
+    <string name="follower">Follower</string>
+    <string name="maria_jorden">Maria Jorden</string>
+    <string name="photos">Photos</string>
 </resources>
