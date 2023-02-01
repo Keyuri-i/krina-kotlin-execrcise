@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,20 +15,41 @@
         android:theme="@style/Theme.BasicProgram"
         tools:targetApi="31">
         <activity
-            android:name=".ValidationActivity"
+            android:name=".fakeStore.FakeStoreActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".InstaActivity"
+            android:name=".movieApi.MoviesActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".retrofit2.RetrofitActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ValidationActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".adapter.InstaActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -35,6 +58,8 @@
         <activity
             android:name=".ExampleActivity"
             android:exported="true">
+
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -42,8 +67,6 @@
         <activity
             android:name=".ConstraintActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
