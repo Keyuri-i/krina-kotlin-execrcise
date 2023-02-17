@@ -1,5 +1,7 @@
 package com.example.basicprogram.fakeStore
 
+import java.io.Serializable
+
 data class FakeStoreItem(
     val category: String,
     val description: String,
@@ -8,6 +10,4 @@ data class FakeStoreItem(
     var price: Double,
     val rating: Rating,
     val title: String
-)
-
-
+) : Serializable

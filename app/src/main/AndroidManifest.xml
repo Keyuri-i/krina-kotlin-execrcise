@@ -10,13 +10,30 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/flowers"
         android:supportsRtl="true"
         android:theme="@style/Theme.BasicProgram"
         tools:targetApi="31">
         <activity
+            android:name=".fakeStore.AddProductActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fakeStore.DetailActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".fakeStore.FakeStoreActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,8 +75,6 @@
         <activity
             android:name=".ExampleActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

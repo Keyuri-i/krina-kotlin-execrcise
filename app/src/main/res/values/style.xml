@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+
     <style name="TextViewStyle">
 
         <item name="android:layout_marginStart">10dp</item>
@@ -48,7 +50,7 @@
     </style>
 
     <style name="line">
-        <item name="android:background">@color/light_gray1</item>
+        <item name="android:background">@color/gray</item>
 
     </style>
 
@@ -384,4 +386,32 @@
         <item name="fontFamily">@font/helvetica_neue_lt_std_roman</item>-->
         <item name="android:textStyle">normal</item>
     </style>
+
+    <style name="CategoryTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/asimovprinta</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="NewProductTextView">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/asimovprinta</item>
+
+    </style>
+
+    <style name="spinnerTheme">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingStart">3dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+
 </resources>

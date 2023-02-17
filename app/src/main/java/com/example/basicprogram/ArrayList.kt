@@ -1,6 +1,5 @@
 package com.example.basicprogram
 
-/*
 class Employee(var emp_code:Int,val emp_name:String,val basic_sal:Int,var gross_sal:Double)
 
 fun main(){
@@ -21,4 +20,4 @@ fun main(){
         i.gross_sal=i.basic_sal+ (0.2*(i.basic_sal)) + (0.3*(i.basic_sal))
         println("${i.emp_code} ${i.emp_name} ${i.basic_sal} ${i.gross_sal}")
     }
-}*/
+}

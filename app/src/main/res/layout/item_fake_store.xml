@@ -1,102 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_con"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/dimen_5dp"
-    android:layout_margin="@dimen/dimen_2dp">
-
-    <TextView
-        android:id="@+id/txt_id"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/blue"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:layout_marginStart="@dimen/dimen_10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    android:layout_margin="@dimen/dimen_2dp"
+    android:padding="@dimen/dimen_5dp">
 
 
     <ImageView
         android:id="@+id/storeImg"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/txt_id"/>
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="#80000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/txt_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/storeImg"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/txt_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/storeImg"
-        android:layout_marginStart="@dimen/dimen_5dp"/>
+        app:layout_constraintStart_toStartOf="@id/txt_category"
+        app:layout_constraintTop_toBottomOf="@id/txt_category" />
 
-    <TextView
-        android:id="@+id/txt_category"
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:id="@+id/txt_rating_rate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_5dp"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt_category"
         app:layout_constraintTop_toBottomOf="@id/txt_title"
-        app:layout_constraintStart_toStartOf="@id/txt_title" />
-
-    <TextView
-        android:id="@+id/txt_price"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_5dp"
-        android:textColor="@color/blue"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/txt_category"
-        app:layout_constraintStart_toStartOf="@id/txt_title" />
+        app:srb_borderColor="@color/star_clr"
+        app:srb_fillColor="@color/star_clr"
+        app:srb_isIndicator="true"
+        app:srb_starSize="@dimen/dimen_13dp" />
 
     <TextView
         android:id="@+id/txt_rating_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5dp"
         android:layout_marginTop="@dimen/dimen_5dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/txt_price"
-        app:layout_constraintStart_toStartOf="@id/txt_title" />
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/txt_rating_rate"
+        app:layout_constraintTop_toBottomOf="@id/txt_title" />
 
     <TextView
-        android:id="@+id/txt_rating_rate"
+        android:id="@+id/txt_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_5dp"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_marginEnd="@dimen/dimen_10dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_price"
-        android:layout_marginStart="@dimen/dimen_10dp"
-        app:layout_constraintStart_toEndOf="@id/txt_rating_count" />
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textColor="@color/blue"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_category"
+        app:layout_constraintTop_toBottomOf="@id/txt_rating_rate" />
+
 
     <TextView
         android:id="@+id/txt_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/dimen_10dp"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:layout_marginTop="@dimen/dimen_5dp"
-        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_con"
+        app:layout_constraintEnd_toEndOf="@id/txt_rating_count"
         app:layout_constraintStart_toStartOf="@id/storeImg"
+        app:layout_constraintTop_toBottomOf="@id/storeImg" />
+
+
+    <View
+        android:id="@+id/view"
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="@dimen/dimen_10dp"
-        app:layout_constraintTop_toBottomOf="@id/storeImg"
-        android:layout_marginStart="@dimen/dimen_10dp"/>
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

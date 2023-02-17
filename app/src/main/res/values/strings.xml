@@ -74,4 +74,22 @@
     <string name="follower">Follower</string>
     <string name="maria_jorden">Maria Jorden</string>
     <string name="photos">Photos</string>
+
+    <string-array name="order">
+        <item>Ascending</item>
+        <item>Descending</item>
+        <item>Category</item>
+    </string-array>
+
+    <string name="product">Product</string>
+    <string name="product_details">Product Details</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="title_error">Please Enter title</string>
+    <string name="price_error">Please Enter price</string>
+    <string name="description_error">Please Enter Description</string>
+    <string name="category_error">Please Select any Category</string>
 </resources>

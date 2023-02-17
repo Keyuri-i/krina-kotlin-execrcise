@@ -41,4 +41,6 @@
     <color name="light_purple">#EFECF1</color>
     <color name="view_line">#f3f3f3</color>
     <color name="vertical_view_line">#E0D0F2</color>
+
+    <color name="star_clr">#FFD44A</color>
 </resources>
